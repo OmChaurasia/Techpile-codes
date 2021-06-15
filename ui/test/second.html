@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>second</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+
+            height: 100vh;
+            width: 100vw;
+            background: #f2dfe1;
+            display: grid;
+            place-items: center;
+        }
+
+        .container {
+            width: 60vw;
+          box-shadow: 2px 3px 10px 4px rgba(0, 0, 0, 0.486);
+            height: 500px;
+            display: flex;
+            border-radius: 10px;
+        }
+        .container .first{
+            height: 100%;
+            width: 50%;
+            background: #fff;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+        .container .first h3{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 34px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        .container .first .social{
+            height: 50px;
+            display: flex;
+            width: 50%;
+     //       background: red;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .container .first .social div{
+            height: 50px;
+            width: 50px;
+            border: 1px solid #0000003a;
+            margin-left: 29px;
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+        }.container .first p{
+            margin: auto;
+            text-align: center;
+            margin-top: 20px;
+            color: #886167;
+        }
+        .container .first form{
+           // background: red;
+            height: 50%;
+        }
+        .container .first input{
+            height: 34px;
+            width: 70%;
+            background: #ededed;
+            border: none;
+            display: flex;
+            border: 1px solid rgba(0, 0, 0, 0.397);
+            width: 70%;
+            margin-top: 34px;
+            padding-left: 34px;
+            margin: auto;
+        }
+        .container .first a{
+            text-decoration: none;
+            color: rgba(0, 0, 0, 0.418);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container .first input[type=submit]{
+            background: #fe4a2a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+            margin-top: 30px;
+        }
+        .container .second{
+            height: 100%;
+            background: linear-gradient(90deg,#fe454b,#fc426c);
+            width: 50%;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            display: grid;
+            place-items: center;
+            text-align: center;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .container .second h3{
+            font-size: 34px;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 30px;
+        }
+        .container .second p{
+            margin: auto;
+            width: 80%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="first">
+            <h3>Login</h3>
+            <div class="social">
+                <div> <i class="fab fa-facebook-f"></i></div>
+                <div><i class="fab fa-twitter"></i></div>
+            </div>
+            <p>or use your account</p>
+            <form action="">
+                <input type="email" placeholder="Email"><br>
+                <input type="password" placeholder="Password">
+                <p><a href="">Forget your password?</a></p>
+                <input type="submit" value="LOG IN">
+            </form>
+        </div>
+        <div class="second">
+            <div>
+                <h3>HTML CSS Login Form</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate quibusdam architecto molestiae incidunt minus? Vero ducimus optio veritatis, earum voluptates consequatur beatae iure voluptatum omnis aut sit illum? Ducimus, est!</p>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>

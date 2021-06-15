@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5.1</title>
+    <style>
+        form {
+            width: 500px;
+        }
+
+        form fieldset {
+            border: 2px solid black;
+            box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        }
+
+        .box {
+            display: flex;
+            margin-bottom: 5px;
+        }
+
+        .n {
+            width: 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Form Validation</legend>
+            <div class="box">
+                <div class="n">Name:</div>
+                <div class="in"><input type="text" name="" id="" required></div>
+            </div>
+            <div class="box">
+                <div class="n">Username:</div>
+                <div class="in"><input type="text" name="" id="" required></div>
+            </div>
+            <div class="box">
+                <div class="n">Password:</div>
+                <div class="in"><input type="password" name="" id="" required></div>
+            </div>
+            <div class="box">
+                <div class="n">Re-Password:</div>
+                <div class="in"><input type="password" name="" id="" required></div>
+            </div>
+            <div class="box">
+                <div class="n">Gender:</div>
+                <div class="in"><input type="radio" name="gen">Male <input type="radio" name="gen">Female <input
+                        type="radio" name="gen">Other</div>
+            </div>
+            <div class="box">
+                <div class="n">Programming Skills:</div>
+                <div class="in"><input type="checkbox">Java <input type="checkbox">Android <input type="checkbox">Ruby
+                    <input type="checkbox">.net</div>
+            </div>
+            <div class="box">
+                <div class="n">Contact No.:</div>
+                <div class="in"><input type="number" name="" id="" required></div>
+            </div>
+            <div class="box">
+                <div class="n">Email:</div>
+                <div class="in"><input type="email" name="" id="" required></div>
+            </div>
+            <div class="box">
+                <div class="n">College:</div>
+                <div class="in">
+                    <select required>
+                        <option value="">select</option>
+                        <option value="">Option 1</option>
+                        <option value="">Option 2</option>
+                    </select>
+                </div>
+            </div>
+            <div class="box">
+                <div class="n"></div>
+                <div class="in"><input type="submit" value="Submit"></div>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

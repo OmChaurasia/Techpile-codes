@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            width: 35vw;
+            height: 100vh;
+            background: #3d9e48;
+            margin: auto;
+            display: grid;
+            place-items: center;
+        }
+        .border{
+            width: 80%;
+            height: 90%;
+            background: #454545;
+            border: 5px solid #353535;
+            border-radius: 40px;
+            display: grid;
+            place-items: center;
+        }
+        .inner{
+            height: 90%;
+            width: 90%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(6,1fr);
+            grid-gap: 18px;
+        }
+        
+        .box1{
+            
+            grid-column: 1/5;
+            grid-row: 1/3;
+        }
+        
+        .box1 input{
+            height: 100%;
+            width: 100%;
+            background: #fefefe;
+            border: none;
+            border-radius: 18px;
+            font-size: 50px;
+            text-align: right;
+            box-shadow: 0 0 5px 2px rgba(255, 255, 255, 0.329);
+        }
+        .inner button{
+            height: 100%;
+            width: 100%;
+            background: #fefefe;
+            border: none;
+            border-radius: 10px;
+            font-size: 35px;
+            font-weight: bold;
+            box-shadow: 5px 5px 5px #000;
+        }
+        .box17 button{
+            background: #f49b34;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="border">
+            <div class="inner">
+                <div class="box1">
+                    <input type="number" name="" id="">
+                </div>
+                <div class="box2">
+                    <button>7</button>
+                </div>
+                <div class="box3"><button>8</button></div>
+                <div class="box4"><button>9</button></div>
+                <div class="box5"><button>/</button></div>
+                <div class="box6"><button>4</button></div>
+                <div class="box7"><button>5</button></div>
+                <div class="box8"><button>6</button></div>
+                <div class="box9"><button>X</button></div>
+                <div class="box10"><button>1</button></div>
+                <div class="box11"><button>2</button></div>
+                <div class="box12"><button>3</button></div>
+                <div class="box13"><button>-</button></div>
+                <div class="box14"><button>0</button></div>
+                <div class="box15"><button>.</button></div>
+                <div class="box16"><button>+</button></div>
+                <div class="box17"><button>=</button></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

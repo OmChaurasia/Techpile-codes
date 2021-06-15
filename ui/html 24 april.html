@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .form1 {
+            background: #cccccc;
+            width: 100vw;
+            height: 200vh;
+            box-sizing: border-box;
+            padding: 35px;
+        }
+
+        .form1 form {
+            margin: auto;
+            width: 50vw;
+            border-radius: 5px;
+            box-shadow: 0 0 10px 2px;
+            background: #fff;
+        }
+
+        .heading {
+            background: red;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            height: 50px;
+            color: #fff;
+        }
+
+        .heading h1 {
+            line-height: 50px;
+            padding-left: 5px;
+        }
+
+        .form1 form h3 {
+            margin: 15px;
+            font-size: 28px;
+        }
+
+        .form1 form p {
+            margin: 15px;
+            color: red;
+        }
+
+        .form1 .insideform {
+            background: rgba(0, 0, 0, 0.1);
+            width: 90%;
+            margin: auto;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+
+        }
+
+        .form1 .h3heading {
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .form1 .naming {
+
+            width: 30%;
+            text-align: right;
+        }
+
+        .form1 .namval {
+
+            width: 60%;
+            float: right;
+        }
+
+        .form1 .formcontent {
+            display: flex;
+            margin-bottom: 10px;
+        }
+
+        .form1 .btnbox {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form1 .btnbox input {
+            background: red;
+            margin: 10px;
+            padding: 10px;
+            color: #fff;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .form2 {
+            background: #fff;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 35px;
+        }
+        .form2 form {
+            margin: auto;
+            width: 70vw;
+
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: #fff;
+        }
+        .form2 table th{
+            width: 300px;
+            height: 34px;
+            background: #ccccff;
+        }
+        .form2 textarea{
+            height: 100px;
+            min-height: 100px;
+            max-height: 100px;
+            width: 100%;
+            max-width: 600px;
+            min-width: 600px;
+        }
+        .form2 .lastbtn{
+            
+            text-align: center;
+        }
+        .form2 input[type=text]{
+            width: 100%;
+            height: 100%;
+        }
+        .form3 {
+            background: #e7eefc;
+            width: 100vw;
+            height: 150vh;
+            box-sizing: border-box;
+            padding: 35px;
+        }
+
+        .form3 form {
+            margin: auto;
+            width: 50vw;
+
+            box-shadow: 0 0 10px 2px;
+            background: #fff;
+        }
+
+        .form3 .topnote {
+
+            text-align: right;
+            padding: 15px;
+        }
+
+        .form3 .row {
+            display: flex;
+            line-height: 50px;
+
+        }
+
+        .form3 .naming {
+            width: 30%;
+            text-align: right;
+            padding-right: 10px;
+        }
+
+        .form3 .namval {
+            width: 60%;
+        }
+
+        .form3 .namval input {
+            height: 34px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            font-size: 20px;
+            width: 250px;
+        }
+
+        .form3 select {
+            height: 34px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            font-size: 20px;
+            width: 250px;
+        }
+
+        .form3 #submitbtn {
+            background: linear-gradient(#787878, #292929);
+            color: #fff;
+            width: 100px;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .form4 {
+            background: linear-gradient(to top left, #9d06eb, #55d7e4);
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 35px;
+        }
+        .form4 form {
+            margin: auto;
+            width: 30vw;
+
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: #fff;
+        }
+        .form4 .smlh3{
+            display: grid;
+            place-items: center;
+            
+            font-size: 34px;
+            padding:  20px;
+        }
+        .form4 .row{
+            width: 80%;
+            margin: auto;
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+        .form4 .namval input{
+            width: 100%;
+            height: 35px;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+        }
+        .form4 a{
+            text-decoration: none;
+            
+        }
+        .form4 #logbtn{
+            background: linear-gradient(90deg,#6dc7d1,#910ed6);
+            border: none;
+            color: white;
+            font-size: 20px;
+        }
+        .form4 .foot{
+            
+            width: 50%;
+            margin: auto;
+        }
+        .form5 {
+            background: linear-gradient(to top right, #18c2f2, #757ccc,#b62cd3);
+            width: 100vw;
+            height: 150vh;
+            box-sizing: border-box;
+            padding: 35px;
+        }
+        .form5 form {
+            margin: auto;
+            width: 30vw;
+
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            background: #fff;
+        }
+        .form5 .smlh3{
+            display: grid;
+            place-items: center;
+            
+            font-size: 34px;
+            padding:  20px;
+        }
+        .form5 .row{
+            width: 80%;
+            margin: auto;
+            padding-bottom: 20px;
+            font-size: 20px;
+        }
+        .form5 .naming{
+            color: rgba(0, 0, 0, 0.8);
+        }
+        .form5 .namval input{
+            width: 100%;
+            height: 35px;
+            border: none;
+            font-size: 20px;
+            border-bottom: 1px solid rgb(0, 0, 0 ,0.3);
+        }
+        .form5 .namval select{
+            width: 100%;
+            height: 35px;
+            border: none;
+            font-size: 20px;
+            border-bottom: 1px solid rgb(0, 0, 0 ,0.3);
+        }
+        .form5 textarea{
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+            height: 100px;
+            min-height: 100px;
+            max-height: 100px;
+            font-size: 20px;
+            border: none;
+            border-bottom: 1px solid rgb(0, 0, 0 ,0.3);
+            
+        }
+        #subtn{
+            background: linear-gradient(90deg,#e507d8,#00e0d8);
+            line-height: 35px;
+            color: #fff;
+            border: none;
+            border-radius: 20px;
+        }
+        .form6 {
+            background: #ecf0f3;
+            width: 100vw;
+            height: 100vh;
+            box-sizing: border-box;
+            padding: 35px;
+        }
+        .form6 form {
+            margin: auto;
+            width: 80vw;
+
+           // border: 1px solid rgba(0, 0, 0, 0.1);
+           // background: #fff;
+        }
+        .form6 .smlh3{
+            
+            
+            font-size: 34px;
+            padding:  20px;
+        }
+        .form6 .row{
+            display: flex;
+            margin-left: 30px;
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .form6 .naming{
+            width: 15%;
+            //background: red;
+            line-height: 35px;
+            padding-left: 20px;
+        }
+        .form6 .namval{
+            width: 30%;
+            
+        }
+        .form6 .namval input{
+            width: 100%;
+            height: 35px;
+            border: none;
+            background: #a6a6a6;
+            border-radius: 10px;
+            padding-left: 5px;
+        }
+        .form6 .btnsec{
+           // background: red;
+            width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+        .form6 .btnsec input{
+            height: 50px;
+            width: 100px;
+            border: none;
+            border-radius: 10px;
+            margin: 10px;
+            background: #a6a6a6;
+            font: bold;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form1">
+        <form>
+            <div class="heading">
+                <h1>JobSearch.com</h1>
+            </div>
+            <h3>Create Your Account</h3>
+
+            <p>*Required information</p>
+
+            <div class="insideform">
+                <div class="h3heading">
+                    <h3>Basic information</h3>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">Email*</div>
+                    <div class="namval"><input type="email" name="" required id=""></div>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">Password*</div>
+                    <div class="namval"><input type="password" required name="" id=""></div>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">Retype Password*</div>
+                    <div class="namval"><input type="password" required name="" id=""></div>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">First Name*</div>
+                    <div class="namval"><input type="text" name="" required id=""></div>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">Last Name*</div>
+                    <div class="namval"><input type="text" required name="" id=""></div>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">Mobile Number*</div>
+                    <div class="namval"><input type="number" name="" required id="" placeholder="999-999-9999"></div>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">Address*</div>
+                    <div class="namval"><input type="text" name="" id="" required></div>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">City*</div>
+                    <div class="namval"><input type="text" name="" id="" required></div>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">State*</div>
+                    <div class="namval"><select name="state" id="state" required class="form-control">
+                            <option value="Andhra Pradesh">Andhra Pradesh</option>
+                            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                            <option value="Assam">Assam</option>
+                            <option value="Bihar">Bihar</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Chhattisgarh">Chhattisgarh</option>
+                            <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                            <option value="Daman and Diu">Daman and Diu</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Lakshadweep">Lakshadweep</option>
+                            <option value="Puducherry">Puducherry</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Gujarat">Gujarat</option>
+                            <option value="Haryana">Haryana</option>
+                            <option value="Himachal Pradesh">Himachal Pradesh</option>
+                            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                            <option value="Jharkhand">Jharkhand</option>
+                            <option value="Karnataka">Karnataka</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Madhya Pradesh">Madhya Pradesh</option>
+                            <option value="Maharashtra">Maharashtra</option>
+                            <option value="Manipur">Manipur</option>
+                            <option value="Meghalaya">Meghalaya</option>
+                            <option value="Mizoram">Mizoram</option>
+                            <option value="Nagaland">Nagaland</option>
+                            <option value="Odisha">Odisha</option>
+                            <option value="Punjab">Punjab</option>
+                            <option value="Rajasthan">Rajasthan</option>
+                            <option value="Sikkim">Sikkim</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Telangana">Telangana</option>
+                            <option value="Tripura">Tripura</option>
+                            <option value="Uttar Pradesh">Uttar Pradesh</option>
+                            <option value="Uttarakhand">Uttarakhand</option>
+                            <option value="West Bengal">West Bengal</option>
+                        </select></div>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">Country*</div>
+                    <div class="namval"><input type="text" name="" id="" required></div>
+                </div>
+            </div>
+
+            <div class="insideform">
+                <div class="h3heading">
+                    <h3>Education</h3>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">School*</div>
+                    <div class="namval"><input type="email" required name="" id=""></div>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">Program*</div>
+                    <div class="namval"><input type="text" name="" required id=""></div>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">Education level*</div>
+                    <div class="namval"><select required>
+                            <option value="select">Select</option>
+                            <option value="Undergraduate">Undergraduate</option>
+                            <option value="Postgraduate">Postgraduate</option>
+                        </select><br>
+                        Education Status <br>
+                        <input type="radio" name="education" id=""> Graduated <br>
+                        <input type="radio" name="education" id=""> Current Enrolled <br>
+                        <input type="radio" name="education" id=""> Did Not Graduate <br>
+                    </div>
+                </div>
+
+                <div class="formcontent">
+                    <div class="naming">Graduation Level</div>
+                    <div class="namval"><input type="text" name="" id=""></div>
+                </div>
+            </div>
+            <div class="insideform">
+                <div class="h3heading">
+                    <h3>Work Experience</h3>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">Employer:</div>
+                    <div class="namval"><input type="email" name="" id=""></div>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">Job Title:</div>
+                    <div class="namval"><input type="text" name="" id=""></div>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">Job Duty:</div>
+                    <div class="namval"><input type="text" name="" id=""></div>
+                </div>
+
+                <div class="formcontent">
+                    <div class="naming">Worked Year:</div>
+                    <div class="namval"><input type="number" name="" id=""></div>
+                </div>
+            </div>
+            <div class="insideform">
+                <div class="h3heading">
+                    <h3>Attachments</h3>
+                </div>
+                <div class="formcontent">
+                    <div class="naming">Attachments:</div>
+                    <div class="namval"><input type="file"></div>
+                </div>
+
+            </div>
+            <div class="btnbox">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Apply">
+            </div>
+
+        </form>
+    </div>
+    <div class="form2">
+        <form action="">
+            <table border="1px">
+                <th>Name</th>
+                <th>Value</th>
+                <tr>
+                    <td>Name</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Sex</td>
+                    <td><input type="radio" name="sex">Male <br>
+                    <input type="radio" name="sex">Female</td>
+                </tr>
+                <tr>
+                    <td>Eye color</td>
+                    <td><select>
+                        <option value="green">green</option>
+                        <option value="black">black</option>
+                        <option value="blue">blue</option>
+                    </select></td>
+                    
+                </tr>
+                <tr>
+                    <td>Check all that apply</td>
+                    <td><input type="checkbox">Over 6 feet tall<br><input type="checkbox" name="" id="">Over 200 pounds</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Describe your athletic ability : <br>
+                    <textarea ></textarea>
+                    </td>
+                    
+                </tr>
+                <tr >
+                    <td colspan="2" class="lastbtn"><input type="submit" value="Enter my information"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+    <div class="form3">
+        <form action="">
+            <div class="topnote">* denotes a required field</div>
+            <div class="row">
+                <div class="naming">First Name </div>
+                <div class="namval"><input type="text" required>*</div>
+            </div>
+            <div class="row">
+                <div class="naming">Last Name </div>
+                <div class="namval"><input type="text" required>*</div>
+            </div>
+            <div class="row">
+                <div class="naming">Father Name </div>
+                <div class="namval"><input type="text"></div>
+            </div>
+            <div class="row">
+                <div class="naming">Date of Birth </div>
+                <div class="namval"><input type="date" required>*</div>
+            </div>
+            <div class="row">
+                <div class="naming">Tel </div>
+                <div class="namval"><input type="text" required>*</div>
+            </div>
+            <div class="row">
+                <div class="naming">High School Name </div>
+                <div class="namval"><input type="text" required>*</div>
+            </div>
+            <div class="row">
+                <div class="naming">Permanent Address </div>
+                <div class="namval"><input type="text" required>*</div>
+            </div>
+            <div class="row">
+                <div class="naming">Your Level</div>
+                <div class="namval"><select>
+                        <option value="1styear">1st Year</option>
+                        <option value="2styear">2st Year</option>
+                        <option value="3styear">3st Year</option>
+                    </select></div>
+            </div>
+            <div class="row">
+                <div class="naming">Email </div>
+                <div class="namval"><input type="email" required>*</div>
+            </div>
+            <div class="row">
+                <div class="naming">Degree Program </div>
+                <div class="namval"><input type="text" required>*</div>
+            </div>
+            <div class="row">
+                <div class="naming"> </div>
+                <div class="namval"><input type="submit" value="Register" id="submitbtn"></div>
+            </div>
+        </form>
+    </div>
+    <div class="form4">
+        <form action="">
+            <div class="smlh3"><h3>Login Form</h3></div>
+            <div class="row">
+                <div class="naming">Email or Phone</div>
+                <div class="namval"><input type="email"></div>
+            </div>
+            <div class="row">
+                <div class="naming">Password</div>
+                <div class="namval"><input type="password"></div>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <div class="row">
+                <div class="naming"></div>
+                <div class="namval"><input type="submit" value="Login" id="logbtn"></div>
+            </div>
+            
+            <div class="foot"><p>Not a member?<a href="">Signup now</a></p></div>
+        </form>
+    </div>
+    <div class="form5">
+        <form action="">
+            <div class="smlh3"><h3>Say Hello!</h3></div>
+            <div class="row">
+                <div class="naming">Your Name</div>
+                <div class="namval"><input type="text" placeholder="Enter your name"></div>
+            </div>
+            <div class="row">
+                <div class="naming">Email</div>
+                <div class="namval"><input type="email" placeholder="Enter your email address"></div>
+                
+            </div>
+            <div class="row">
+                <div class="naming">Needed Services</div>
+                <div class="namval"><select>
+                    <option value="Choose Services">Choose Services</option>
+                    <option value="1st option">1st option</option>
+                    <option value="2nd option">2nd option</option>
+                    <option value="3rd option">3rd option</option>
+                </select></div>
+                
+            </div>
+            <div class="row">
+                <div class="naming">Budget</div>
+                <div class="namval"><select>
+                    <option value="Select Budget">Select Budget</option>
+                    <option value="1st option">1st option</option>
+                    <option value="2nd option">2nd option</option>
+                    <option value="3rd option">3rd option</option>
+                </select></div>
+                
+            </div>
+            <div class="row">
+                <div class="naming">Message</div>
+                <div class="namval"><textarea placeholder="Your message here..."></textarea></div>
+                
+            </div>
+            <div class="row">
+                <div class="naming"></div>
+                <div class="namval"><input type="submit" value="Submit" id="subtn"></div>
+            </div>
+            
+            
+        </form>
+    </div>
+    <div class="form6">
+        <form action="">
+            <div class="smlh3"><h3>Html Form</h3></div>
+            <div class="row">
+                <div class="naming">First Name :</div>
+                <div class="namval"><input type="text"></div>
+            </div>
+            <div class="row">
+                <div class="naming">Last Name :</div>
+                <div class="namval"><input type="text"></div>
+            </div>
+            <div class="row">
+                <div class="naming">Date of Birth :</div>
+                <div class="namval"><input type="text"></div>
+            </div>
+            <div class="row">
+                <div class="naming">Email id :</div>
+                <div class="namval"><input type="email"></div>
+            </div>
+            <div class="row">
+                <div class="naming">Mobile Number :</div>
+                <div class="namval"><input type="number"></div>
+            </div>
+            <div class="btnsec">
+                <input type="reset" value="Reset">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

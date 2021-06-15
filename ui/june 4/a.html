@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .top {
+            background: #116dea;
+            color: #fff;
+            line-height: 34px;
+            position: relative;
+            display: flex;
+        }
+
+        .top .contact {
+            padding-left: 100px;
+        }
+
+        .top .dailer {
+            padding-left: 50px;
+        }
+
+        .top .social {
+            padding-left: 50px;
+            position: absolute;
+            right: 50px;
+        }
+
+        .top .social i {
+            margin-left: 14px;
+        }
+
+        .navbar {
+            height: 60px;
+            //  background: red;
+            line-height: 60px;
+            position: relative;
+            display: flex;
+        }
+
+        .navbar .logo {
+            // background: blue;
+            display: flex;
+            width: 200px;
+            margin-left: 100px;
+            font-size: 34px;
+
+        }
+
+        .mainav {}
+
+        .mainav ul {
+            display: flex;
+            list-style: none;
+            // background: yellow;
+            position: absolute;
+            right: 0;
+        }
+
+        .mainav ul li a {
+            text-decoration: none;
+            padding: 5px;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .mainav ul li select {
+            padding: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+        }
+
+        .mainav ul li .home {
+            color: #7089b4;
+            border-bottom: 3px solid #7089b4;
+        }
+
+        .jumbo {
+            background-image: url(img.jpeg);
+            background-color: rgba(202, 29, 29, 0.6);
+
+            position: relative;
+            height: 350px;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .jumbo .cover {
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.58);
+            position: absolute;
+        }
+
+        .jumbo .innerbox {
+
+            //   background: blue;
+            z-index: 5;
+            margin-left: 100px;
+        }
+
+        .jumbo h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .jumbo p {
+            margin-bottom: 20px;
+            font-size: 20px;
+        }
+
+        .jumbo #firstb {
+            line-height: 34px;
+            width: 150px;
+            font-size: 20px;
+            border: none;
+            background: #1e6fdc;
+            color: #fff;
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .jumbo #secondb {
+            line-height: 34px;
+            width: 150px;
+            font-size: 20px;
+            border: none;
+            background: transparent;
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+            margin-right: 20px;
+        }
+
+        .content {
+            height: 500px;
+            //   background: blue;
+            position: relative;
+        }
+
+        .content .container {
+            margin: auto;
+            width: 90%;
+            position: absolute;
+            //   background: red;
+            height: 400px;
+            top: 40px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            grid-gap: 20px;
+        }
+
+        .content .container div {
+            background: #FFF;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.473);
+        }
+
+        .content .container div span {
+            color: #2769c9;
+            font-size: 34px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <div class="contact"><i class="fas fa-envelope"></i> contact@example.com</div>
+        <div class="dailer"><i class="fas fa-phone-alt"></i> +91 7309370691</div>
+        <div class="social">
+            <i class="fab fa-twitter"></i> <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-instagram"></i> <i class="fab fa-skype"></i> <i class="fab fa-linkedin"></i>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <h3>Bizland.</h3>
+        </div>
+        <div class="mainav">
+            <ul>
+                <li><a href="" class="home">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href=""><select name="" id="">
+                            <option value="Drop Down">Drop Down</option>
+                            <option value="Drop">Drop</option>
+                        </select></a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="jumbo">
+        <div class="cover"></div>
+        <div class="innerbox">
+            <h1>Welcome to <span style="color: #0965ce;">Bizland</span></h1>
+            <p>We are team of talented designers making websites with bootstrap</p>
+            <button id="firstb">Get Started</button>
+            <button id="secondb"><span style="color: #0471c4;"><i class="far fa-play-circle"></i></span> Watch
+                Video</button>
+        </div>
+    </div>
+    <div class="content">
+        <div class="container">
+            <div><span style=""><i class="fas fa-basketball-ball"></i></span>
+                <br><br>
+                <b>Lorem, ipsum</b><br><br>
+                dolor sit amet consectetur adipisicing elit. Est ullam,
+            </div>
+            <div><span style=""><i class="fas fa-file-alt"></i></span>
+                <br><br>
+                <b>Lorem, ipsum</b><br><br>
+                dolor sit amet consectetur adipisicing elit. Est ullam,
+            </div>
+            <div><span style=""><i class="far fa-clock"></i></span>
+                <br><br>
+                <b>Lorem, ipsum</b><br><br>
+                dolor sit amet consectetur adipisicing elit. Est ullam,
+            </div>
+            <div><span style=""><i class="fas fa-globe-africa"></i></span>
+                <br><br>
+                <b>Lorem, ipsum</b><br><br>
+                dolor sit amet consectetur adipisicing elit. Est ullam,
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

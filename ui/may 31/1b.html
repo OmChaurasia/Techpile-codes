@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1b</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: #e8e8ea;
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+        }
+        .container{
+            width: 50vw;
+          //  background: red;
+            position: relative;
+            display:flex;
+        }
+        .sbox{
+            width: 50%;
+            height: 380px;
+            display: grid;
+            place-items: center;
+        }
+        .sbox1{
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            background: #267dff;
+        }
+        .sbox2{
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            background: #fff;
+        }
+        .circle1{
+            position: absolute;
+            height: 130px;
+            width: 130px;
+            background: transparent;
+            top: 200px;
+            left: 270px;
+            box-sizing: border-box;
+            border-radius: 50%;
+
+            border: 25px solid #fff;
+        }
+        .circle2{
+            position: absolute;
+            height: 130px;
+            width: 130px;
+            top: 60px;
+            transform: rotate(45deg);
+            right: -67px;
+            background: transparent;
+            box-sizing: border-box;
+            border: 25px solid #e8e8ea;
+            border-radius: 40px;
+        }
+        .sbox .inner{
+            height: 240px;
+            width: 60%;
+         //   background: red;
+        }
+        .sbox1 h3{
+            color: #fff;
+            font-size: 20px;
+            
+        }
+        .line{
+            height: 3px;
+            width: 80px;
+            background: #fff;
+            margin-top: 10px;
+        }
+        .sbox1 p{
+            font-size: 12px;
+            margin-top: 20px;
+            color: #fff;
+        }
+        .sbox1 button{
+            margin-top: 20px;
+            height: 34px;
+            width: 100px;
+            background: transparent;
+            border: 1px solid #fff;
+            border-radius: 20px;
+            color: #fff;
+        }
+        .sbox2 h3{
+            text-align: center;
+            
+        }
+        .line2{
+            height: 3px;
+            width: 40px;
+            background: #3979c9;
+            margin: auto;
+            margin-top: 10px;
+        }
+        .sbox2 input{
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+            padding: 4px;
+            margin: 10px;
+        }
+        #sbtn{
+            height: 30px;
+            width: 86%;
+            background: #277cfb;
+            border: none;
+            border-radius: 20px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="circle1"></div>
+        <div class="circle2"></div>
+        <div class="sbox sbox1">
+            <div class="inner">
+                <h3>Welcome to MDM</h3>
+                <div class="line"></div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat neque perferendis distinctio ratione placeat mollitia! Doloremque excepturi laudantium quibusdam sunt perferendis ratione nihil culpa non.</p>
+                <button>Know More</button>
+            </div>
+        </div>
+        <div class="sbox sbox2">
+            <div class="inner">
+                <h3>Signin</h3>
+                <div class="line2"></div>
+                <form action="">
+                    <input type="text" placeholder="Enter Username">
+                    <input type="password" placeholder="Enter Password">
+                    <input type="submit" value="Login" id="sbtn">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

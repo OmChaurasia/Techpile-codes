@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3a</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(#744db8,#38add3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width: 30vw;
+            height: 500px;
+            background: #2a2869;
+            border-radius: 10px;
+            box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.473);
+        }
+        .container h3{
+            color: #fff;
+            background: rgba(0,0,0,0.3);
+            text-align: center;
+            line-height: 60px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            
+        }
+        .outer{
+            height: calc(100% - 60px);
+            width: 100%;
+          //  background: red;
+            display: grid;
+            place-items: center;
+        }
+        .inner{
+            width: 80%;
+            height: 90%;
+          //  background: blue;
+            position: relative;
+        }
+        input{
+            border: none;
+        }
+        #fname{
+            position: absolute;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 100%;
+            height: 35px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        #lname{
+            position: absolute;
+            top: 50px;
+            right: 0;
+            left: 0;
+            width: 100%;
+            height: 35px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        #email{
+            position: absolute;
+            top: 100px;
+            right: 0;
+            left: 0;
+            width: 100%;
+            height: 35px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        #pass{
+            position: absolute;
+            top: 150px;
+            right: 0;
+            left: 0;
+            width: 100%;
+            height: 35px;
+            padding-left: 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        #submit{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: #63ad2e;
+            color: #fff;
+            width: 40%;
+            height: 35px;
+            
+            box-sizing: border-box;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        #c1{
+            position: absolute;
+            left: 0;
+            top: 230px;
+        }
+        #para1{
+            position: absolute;
+            left: 25px;
+            top: 200px;
+            color: #fff;
+        }
+        #c2{
+            position: absolute;
+            left: 0;
+            top: 280px;
+        }
+        #para2{
+            position: absolute;
+            left: 25px;
+            top: 270px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Registration Form</h3>
+        <div class="outer">
+            <div class="inner">
+                <input type="text" id="fname" placeholder="First name">
+                <input type="text" id="lname" placeholder="Last name">
+                <input type="text" id="email" placeholder="Email">
+                <input type="text" id="pass" placeholder="Password">
+                <input type="checkbox" id="c1" >
+                <p id="para1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit distinctio recusandae quisquam velit, facilis molestiae?</p>
+                <input type="checkbox" id="c2" >
+                <p id="para2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit distinctio recusandae quisquam velit, facilis molestiae?</p>
+                <input type="submit" id="submit" value="Register">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2a</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+            background: url(https://images.pexels.com/photos/356056/pexels-photo-356056.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat;
+            background-size: cover;
+            display: grid;
+            place-items: center;
+            color: #fff;
+            font-weight: bold;
+           
+        }
+        .container{
+            z-index: 2;
+        }
+        h3{
+            font-size: 40px;
+        }
+        p{
+            margin: auto;
+            text-align: center;
+        }
+        .this{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.7);
+            z-index: 1;
+        }
+        button{
+            margin: 10px auto;
+            padding: 10px;
+            float: right;
+            box-shadow: 2px 2px 4px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="this"></div>
+    <div class="container">
+        <h3>Ellen Macpherson</h3>
+        <p><i>Just another tech blog</i></p>
+    <button>Read More</button></div>
+
+</body>
+
+</html>

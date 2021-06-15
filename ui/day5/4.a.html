@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4.a</title>
+    <style>
+
+.container{
+    border: 2px solid black;
+    height: 370px;
+    width: 500px;
+    display: grid;
+    place-items: center;
+}
+.container form{
+    
+    height: 95%;
+    width: 93%;
+    border-top: 5px solid rgba(0, 0, 0, 0.2);
+    border-left: 5px solid rgba(0, 0, 0, 0.2);
+    border-right: 5px solid rgba(0, 0, 0, 0.5);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.5);
+    
+}
+.container form h1 {
+    margin-left: 34px;
+}
+.container form .box{
+    display: flex;
+    margin-left: 30px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="">
+            <h1>HTML Form</h1>
+            <div class="box">
+                <div class="n">
+                   First Name :
+                </div>
+                <div class="in">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="box">
+                <div class="n">
+                   Last Name :
+                </div>
+                <div class="in">
+                    <input type="text">
+                </div>
+            </div>
+            <div class="box">
+                <div class="n">
+                   Email :
+                </div>
+                <div class="in">
+                    <input type="email">
+                </div>
+            </div>
+            <div class="box">
+                <div class="n">
+                   <input type="radio" name="gender" id="">Male <br>
+                   <input type="radio" name="gender" id="">Female
+                </div>
+                
+            </div>
+            <div class="box">
+                <div class="n">
+                   <input type="submit" value="Submit">
+                </div>
+                <div class="in">
+                    <input type="reset" value="Reset">
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

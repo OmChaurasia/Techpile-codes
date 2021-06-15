@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b</title>
+    <style>
+        .container{
+            width: 45vw;
+            margin: auto;
+            height: 400px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(6,1fr);
+            color: #3a77a4;
+            grid-gap: 15px;
+        }
+        .box1{
+            border: 1px solid #696969;
+            box-sizing: border-box;
+        }
+        .box2{
+            border: 1px solid #696969;
+        }
+        .box3{
+            border: 1px solid #696969;
+            grid-row: 3/5;
+        }
+        .box4{
+            border: 1px solid #696969;
+            grid-row: 5/7;
+        }
+        .box1 p{
+            padding: 1em;
+            
+        }
+        .box2 p{
+            padding: 1em 2em;
+            
+        }
+        .box3 p{
+            padding: 1em 2em;
+            padding-bottom: 3em;
+        }
+        .box4 p{
+            padding: 1em 2em 3em 4em;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <p>One value set A  padding value of 1em for all four side</p>
+        </div>
+        <div class="box2">
+            <p>Two values set A padding value of 1em for the top and bottom. 2em for left and right</p>
+        </div>
+        <div class="box3">
+            <p>Three values set A padding value of 1em for the top. 2em for left and right 3em for bottom</p>
+        </div>
+        <div class="box4">
+            <p>Four values set A padding value of 1em for the top. 2em for left and right 3em for bottom and 4em for left</p>
+        </div>
+    </div>
+</body>
+</html>

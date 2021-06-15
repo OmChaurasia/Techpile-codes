@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .top {
+            background: #1c2023;
+            color: #fff;
+            line-height: 34px;
+            position: relative;
+            display: flex;
+        }
+
+        .top .contact {
+            padding-left: 200px;
+        }
+
+        .top .dailer {
+            padding-left: 50px;
+        }
+
+        .top .social {
+            padding-left: 50px;
+            position: absolute;
+            right: 50px;
+        }
+
+        .top .social i {
+            margin-left: 14px;
+        }
+        .navbar {
+            height: 70px;
+            //  background: red;
+            line-height: 70px;
+            position: relative;
+            display: flex;
+        }
+
+        .navbar .logo {
+           //  background: blue;
+            position: relative;
+            width: 250px;
+            margin-left: 200px;
+            font-size: 15px;
+            top: 10px;
+
+        }
+        .navbar .logo .upper{
+        
+            position: absolute;
+            top: -25px;
+            color: #e28b31;
+            font-weight: bold;
+        }
+        
+
+        
+        
+        .mainav {}
+
+        .mainav ul {
+            display: flex;
+            list-style: none;
+            // background: yellow;
+            position: absolute;
+            right: 0;
+        }
+
+        .mainav ul li a {
+            text-decoration: none;
+            padding: 5px;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            margin-right: 10px;
+        }
+
+        .mainav ul li select {
+            padding: 5px;
+            font-size: 20px;
+            cursor: pointer;
+            border: none;
+            background: transparent;
+        }
+
+        .mainav ul li .home {
+            color: #7089b4;
+            border-bottom: 3px solid #7089b4;
+        }
+        .jumbo {
+            background-image: url(https://images.pexels.com/photos/4491881/pexels-photo-4491881.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+
+            position: relative;
+            height: 500px;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .jumbo .cover {
+            height: 100%;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.0.2);
+            position: absolute;
+        }
+
+        .jumbo .innerbox {
+
+           // background: blue;
+            z-index: 5;
+            height: 400px;
+            width: 70vw;
+            display: flex;
+        }
+
+        .jumbo .innerbox .box1{
+            height: 100%;
+            width: 50%;
+            display: grid;
+            place-items: center;
+        }
+        .jumbo .innerbox .box1 .this{
+          //  background: red;
+            width: 100%;
+            color: #fff;
+        }
+        .jumbo .innerbox .box2{
+            height: 100%;
+           // background: red;
+            width: 50%;
+        }
+        .jumbo .innerbox .box2 form{
+            height: 100%;
+            width: 70%;
+            background: #031e34;
+        }
+        form h4{
+            color: #fff;
+            line-height: 40px;
+            text-align: center;
+        }
+        form p{
+            color: rgb(124, 114, 114);
+            text-align: center;
+            font-size: 13px;
+            width: 80%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        form input{
+            margin: auto;
+            display: flex;
+            margin-bottom: 10px;
+            width: 80%;
+            line-height: 24px;
+            padding-left: 10px;
+        }
+        form textarea{
+            margin: auto;
+            display: flex;
+            margin-bottom: 10px;
+            width: 80%;
+            line-height: 34px;
+            padding-left: 10px;
+        }
+        form input[TYPE=SUBMIT]{
+            color: #fff;
+            background: #f38807;
+            border: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            line-height: 34px;
+        }
+        .about{
+            height: 200px;
+            width: 100vw;
+            text-align: center;
+            background: #f5f5f5;
+        }
+        .about h1{
+            margin: 34px;
+        }
+        .about p{
+            width: 60vw;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="contact"><i class="fas fa-phone-alt" style="color: #987f24;"></i> NEED HELP? CALL <span style="color: #987f24; border-bottom: 2px solid #987f24;">01 123 1234</span> </div>
+        <div class="dailer"><i class="fas fa-envelope" style="color:#987f24;"></i> info@domain.com</div>
+        <div class="social">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i> 
+            <i class="fab fa-skype"></i>
+            <i class="fab fa-google-plus-g"></i>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="logo">
+            <div class="upper">CONSTRUCTION COMPANY</div>
+            <div class="neche">Professtional Wordpress Theme</div>
+        </div>
+        <div class="mainav">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">TEAM</a></li>
+                <li><a href="">TESTIMONIALS</a></li>
+                <li><a href="">PAGES</a></li>
+                <li><a href="">SHOP</a></li>
+                
+                <li><a href=""><i class="fas fa-search"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="jumbo">
+        <div class="cover"></div>
+        <div class="innerbox">
+            <div class="box1" style="position: relative;">
+                <div class="this">
+                    <h1>Use our trusted service to build your dream home.</h1><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis assumenda debitis laboriosam nobis nisi?</p>
+                    <i class="fas fa-reply" style="transform: scale(-1, 1);
+                    color: #fff;
+                    -moz-transform: scale(-1, 1);
+                    -webkit-transform: scale(-1, 1);
+                    -o-transform: scale(-1, 1);
+                    -ms-transform: scale(-1, 1);
+                    transform: scale(-1, 1);
+                    font-size:50px;
+                    position:absolute;
+                    top: 20px;
+                    right: 20px;"></i>
+                </div>
+            </div>
+            <div class="box2">
+                <form action="">
+                    <h4>Get a Free Quote!</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo quia reprehenderit necessitatibus laboriosam?</p>
+                    <input type="text" placeholder="Enter your name">
+                    <input type="email" placeholder="Enter your email">
+                    <input type="number" placeholder="Enter your phone number">
+                    <textarea placeholder="Add your message"></textarea>
+                    <input type="submit" value="REQUEST A CALLBACK">
+                    <p><i>100% privacy Guaranted</i></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="about">
+        <h1>About Construction</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iusto possimus, impedit, doloremque, vel temporibus explicabo alias rem laudantium provident tenetur maiores perferendis commodi fugit hic cumque ipsam itaque animi vero quo culpa voluptates tempore. Sequi eum doloremque nulla, distinctio facilis fugiat, exercitationem, accusamus esse consectetur aliquid saepe aspernatur tenetur quisquam.</p>
+    </div>
+</body>
+</html>

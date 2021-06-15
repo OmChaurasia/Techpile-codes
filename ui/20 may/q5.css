@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    font-family: "Trebuchet MS", "Verdana", sans-serif
+}
+.container{
+    background: #575445;
+    padding: 20px;
+    color: #a0c2fb;
+}
+h1{
+   font-size: 50px; 
+   padding: 20px 0px;
+   
+}
+p{
+    padding-bottom: 10px;
+    color: #fff;
+}
+h2{
+    padding: 15px 0;
+}
+strong{
+    color: #FFF86B;
+}
+hr{
+    color: #fff;
+}
+ul{
+    padding: 0 40px;
+    color: #fff;
+}
+ol{
+    padding: 0 40px;
+    color: #fff;
+}
+a{
+    color: #FF4F4F;
+}
+.line{
+    display: flex;
+    margin:10px;
+    position: relative;
+}

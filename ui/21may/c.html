@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c</title>
+    <style>
+        .box2{
+            height: 600px;
+            width: 600px;
+            display: grid;
+            grid-template-rows: repeat(3,200px);
+            grid-template-columns: repeat(3,200px);
+        }
+        .a1{
+            background: #ffaec9;
+            grid-column: 1/4;
+        }
+        .a2{
+            background: #880015;
+        }
+        .a3{
+            background: #fff200;
+        }
+        .a4{
+            background:#7f7f7f;
+        }
+        .a5{
+            background: #b97a57;
+            grid-column: 1/4;
+        }
+        .inner1{
+            display: flex;
+        }
+        .parent{
+            display: flex;
+        }
+        .first{
+            background: #000;
+            height: 300px;
+            width: 300px;
+        }
+        .second{
+            background: #99d9ea;
+            height: 300px;
+            width: 300px;
+        }
+        .inner2{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(1,300px)
+        }
+        .e1{
+            background: #a349a4;
+        }
+        .e2{
+            background: #ffaec9;
+        }
+        .e3{
+            background: #c3c3c3;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="box1">
+            <div class="inner1">
+                <div class="first"></div>
+                <div class="second"></div>
+            </div>
+            <div class="inner2">
+                <div class="e1"></div>
+                <div class="e2"></div>
+                <div class="e3"></div>
+            </div>
+            
+        </div>
+        <div class="box2">
+            <div class="a1"></div>
+            <div class="a2"></div>
+            <div class="a3"></div>
+            <div class="a4"></div>
+            <div class="a5"></div>
+        </div>
+    </div>
+</body>
+</html>

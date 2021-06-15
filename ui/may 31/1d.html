@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1d</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            place-items: center;
+        }
+        .board{
+            height: 600px;
+            width: 600px;
+            display: grid;
+            grid-template-columns: 220px 160px 220px;
+            grid-template-rows: 220px 160px 220px;
+            border: 3px solid #000;
+        }
+        .board div{
+            box-sizing: border-box;
+            border: 1px solid #000;
+        }
+        .rbox{
+            background: linear-gradient(#d61d1c,#841115);
+            display: grid;
+            place-items: center;
+        }
+        .board .pstart{
+            height: 70%;
+            width: 70%;
+            background: #fff;
+            border: none;
+            transform: rotate(45deg);
+            border-radius: 20px;
+            padding: 16px;
+            
+            display: grid;
+            grid-template-columns: 50px 50px;
+            grid-template-rows: 50px 50px;
+            grid-gap: 20px;
+        }
+        .board .rbox .dots{
+            
+            background: linear-gradient(#d61d1c,#841115);
+            border: none;
+            border-radius: 50%;
+        }
+        .board .gbox .dots{
+            background: linear-gradient(#95c83a,#129a61);
+            border: none;
+            border-radius: 50%;
+        }
+        .board .bbox .dots{
+            background: linear-gradient(#29addb,#14799e);
+            border: none;
+            border-radius: 50%;
+        }
+        .board .ybox .dots{
+            background: linear-gradient(#edd426,#d49e2c);
+            border: none;
+            border-radius: 50%;
+        }
+        .groad{
+            background: blue;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(6,1fr);
+        }
+        .gbox{
+            background: linear-gradient(#95c83a,#129a61);
+            display: grid;
+            place-items: center;
+        }
+        .rroad{
+            background: pink;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+        .endgame{
+          //  background: yellow;
+            position: relative;
+        }
+        .yroad{
+            background: aqua;
+            display: grid;
+            grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(3,1fr);
+        }
+        .bbox{
+            background: linear-gradient(#29addb,#14799e);
+            display: grid;
+            place-items: center;
+        }
+        .broad{
+            background: orange;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(6,1fr);
+        }
+        .ybox{
+            background: linear-gradient(#edd426,#d49e2c);
+            display: grid;
+            place-items: center;
+        }
+        .road{
+            box-sizing: border-box;
+            border: 1px solid #000;
+            background: #fff;
+            display: grid;
+            place-items: center;
+        }
+        .cgreen{
+            background: #99d82e;
+        }
+        .cred{
+            background: #e21a1a;
+        }
+        .cyellow{
+            background: #fdd302;
+        }
+        .cblue{
+            background: #0fabdb;
+        }
+        .board .t1{
+            height: 0;
+            width: 0;
+            border: none;
+            border-left: 16px solid transparent;
+	        border-top: 20px solid #99d82e;
+	        border-right: 16px solid transparent;
+        }
+        .board .t2{
+            height: 0;
+            width: 0;
+            border: none;
+            border-top: 16px solid transparent;
+	        border-left: 20px solid #e21a1a;
+	        border-bottom: 16px solid transparent;
+        }
+        .board .t3{
+            height: 0;
+            width: 0;
+            border: none;
+            border-top: 16px solid transparent;
+	        border-right: 20px solid #fdd302;
+	        border-bottom: 16px solid transparent;
+        }
+        .board .t4{
+            height: 0;
+            width: 0;
+            border: none;
+            border-left: 16px solid transparent;
+	        border-bottom: 20px solid #0fabdb;
+	        border-right: 16px solid transparent;
+        }
+        .board .box1{
+            height: 158px;
+            width: 158px;
+            background: linear-gradient(134deg,#0e9d69,#92d12d);
+            position: absolute;
+            left: 0;
+            top: 0;
+            transform: rotate(45deg) translate(-50%,-50%);
+            z-index: -5;
+            
+        }
+        .board .box2{
+            height: 158px;
+            width: 158px;
+            background: linear-gradient(134deg,#09a5d1,#0e7b99);
+            position: absolute;
+            bottom: -111px;
+            left: 0;
+            transform: rotate(45deg) ;
+            z-index: -5;
+            
+        }
+        .board .box3{
+            height: 158px;
+            width: 158px;
+            background: linear-gradient(134deg,#0e9d69,#d2181e);
+            position: absolute;
+            bottom: 0;
+            left: -111px;
+            transform: rotate(45deg);
+            z-index: -5;
+            
+        }
+        .board .box4{
+            height: 158px;
+            width: 158px;
+            background: linear-gradient(134deg,#ffd001,#dd9c12);
+            position: absolute;
+            bottom: 0;
+            right: -111px;
+            transform: rotate(45deg);
+            z-index: -5;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="board">
+        <div class="rbox">
+            <div class="pstart">
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+            </div>
+        </div>
+        <div class="groad">
+            <div class="road"></div>
+            <div class="road"> <div class="t1"></div></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road cgreen"></div>
+            <div class="road cgreen"></div>
+            <div class="road"></div>
+            <div class="road cgreen"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road cgreen"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road cgreen"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road cgreen"></div>
+            <div class="road"></div>
+        </div>
+        <div class="gbox">
+            <div class="pstart">
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+            </div>
+        </div>
+        <div class="rroad">
+            <div class="road"></div>
+            <div class="road cred"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"><div class="t2"></div></div>
+            <div class="road cred"></div>
+            <div class="road cred"></div>
+            <div class="road cred"></div>
+            <div class="road cred"></div>
+            <div class="road cred"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+        </div>
+        <div class="endgame">
+            <div class="box1"></div>
+            <div class="box2"></div>
+            <div class="box3"></div>
+            <div class="box4"></div>
+        </div>
+        <div class="yroad">
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road cyellow"></div>
+            <div class="road cyellow"></div>
+            <div class="road cyellow"></div>
+            <div class="road cyellow"></div>
+            <div class="road cyellow"></div>
+          
+            <div class="road"><div class="t3"></div></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road cyellow"></div>
+            <div class="road"></div>
+        </div>
+        <div class="bbox">
+            <div class="pstart">
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+            </div>
+        </div>
+        <div class="broad">
+            <div class="road"></div>
+            <div class="road cblue"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road cblue"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road cblue"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road cblue"></div>
+            <div class="road"></div>
+            <div class="road cblue"></div>
+            <div class="road cblue"></div>
+            <div class="road"></div>
+            <div class="road"></div>
+            <div class="road"><div class="t4"></div></div>
+            <div class="road"></div>
+        </div>
+        <div class="ybox">
+            <div class="pstart">
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+                <div class="dots"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

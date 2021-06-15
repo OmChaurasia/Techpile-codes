@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>g</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(18,1fr);
+            grid-template-rows: repeat(10,1fr);
+        }
+        .container div{
+            display: grid;
+            place-items: center;
+            color: black;
+            text-shadow: 2px 2px  2px rgb(255, 255, 255);
+        }
+        .salad{
+            background: #8b2854;
+            grid-column: 1/5;
+            grid-row: 1/11;
+        }
+        .soup{
+            background: #ffad30;
+            grid-column: 5/19;
+            grid-row: 1/3;
+        }
+        .pancakes{
+            background: #8cae5a;
+            grid-column: 5/9;
+            grid-row: 3/11;
+        }
+        .sandiwsh{
+            background: #73cfde;
+            grid-column: 9/19;
+            grid-row: 3/5;
+        }
+        .pie{
+            background: #9c9b93;
+            grid-column: 9/13;
+            grid-row: 5/11;
+        }
+        .eggs{
+            background: #d56adc;
+            grid-column: 13/19;
+            grid-row: 5/9;
+        }
+        .waffles{
+            background: #835229;
+            grid-column: 13/19;
+            grid-row: 9/11;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="salad">Salad</div>
+        <div class="soup">Soup</div>
+        <div class="pancakes">Pancakes</div>
+        <div class="sandiwsh">Sandiwsh</div>
+        <div class="pie">Pie</div>
+        <div class="eggs">Eggs</div>
+        <div class="waffles">Waffles</div>
+    </div>
+</body>
+</html>

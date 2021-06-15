@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a</title>
+    
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .topimg{
+            height: 100vh;
+            width: 100vw;
+            background: url(https://images.pexels.com/photos/2440079/pexels-photo-2440079.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #fff;
+        }
+        .top{
+            height: 40px;
+            line-height: 40px;
+            width: 100%;
+          //  background: red;
+            position: relative;
+        }
+        .top .email{
+            position: absolute;
+            left: 100px;
+        }
+        .top .call{
+            position: absolute;
+            left: 400px;
+        }
+        .top .time{
+            position: absolute;
+            left: 600px;
+        }
+        .top .button{
+            position: absolute;
+            right: 100px;
+        }
+        .top .button button{
+            border: none;
+            background: #f6b024;
+            width: 130px;
+            line-height: 30px;
+            color: #fff;
+            border-radius: 20px;
+        }
+        .navbar{
+            height: 50px;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.279);
+            line-height: 50px;
+            position: relative;
+        }
+        .navbar h3{
+            position: absolute;
+            left: 100px;
+        }
+        .navbar ul{
+            list-style: none;
+            display: flex;
+            width: 50vw;
+            //background: red;
+            position: absolute;
+            right: 100px;
+        }
+        .navbar ul li{
+            margin: auto;
+        }
+        .navbar ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px;
+        }
+        .navbar ul li select{
+            font-size: 15px;
+            background: transparent;
+            border: none;
+            color: #fff;
+        }
+        .jumboslider{
+            height: calc(100% - 90px);
+            width: 100%;
+           // background: rgb(78, 19, 117);
+            position: relative;
+        }
+        .jumboslider .rightbtn{
+            position: absolute;
+            top: 80px;
+            right: 100px;
+            font-size: 40px;
+        }
+        .jumboslider .leftbtn{
+            position: absolute;
+            top: 80px;
+            left: 100px;
+            font-size: 40px;
+            transform: rotate(180deg);
+        }
+        .jumboslider .sbox{
+            margin: auto;
+            text-align: center;
+           // background: red;
+            margin-top: 100px;
+        }
+        .jumboslider .sbox p{
+            width: 60%;
+            margin: auto;
+            margin-top: 50px;
+        }
+        .container{
+            height: 500px;
+            width: 100vw;
+           // background: red;
+            transform: translate(0, -100px);
+        }
+        .container .cards{
+        
+            width: 90vw;
+            margin: auto;
+       //     background: blue;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(2,250px);
+            grid-gap: 20px;
+        }
+        .container .cards div{
+            border-radius: 10px;
+            background: #fff;
+            border: 1px solid rgba(0, 0, 0, 0.301);
+            box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.281);
+        }
+        .container .cards div i{
+            color: #f6b024;
+            font-size: 30px;
+            padding-left: 20px;
+            padding-top: 20px;
+        }
+        .container .cards div b{
+            padding-left: 20px;
+            color: #34589e;
+        }
+        .container .cards div p{
+            padding-left: 20px;
+            padding-right: 20px;
+            color: #9b8c9b;
+        }
+    </style>
+</head>
+<body>
+    <div class="topimg">
+        <div class="top">
+            <div class="email"><i class="fas fa-envelope" style="color: #ecad29;"></i> contact@example.com</div>
+            <div class="call"><i class="fas fa-phone-alt" style="color: #987f24;"></i> +91 7309370691</div>
+            <div class="time"><i class="far fa-clock" style="color: #987f24;"></i> Mon-Fri 9am-5pm</div>
+            <div class="button"><button>Get Started</button></div>
+        </div>
+        <div class="navbar">
+            <h3>ANYAR</h3>
+            <ul>
+                <li><a href="" style="border-bottom: 2px solid #f6b024;">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Blog</a></li>
+                <li><select>
+                    <option value="Drop-down">Drop-down</option>
+                </select></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="jumboslider">
+            <div class="leftbtn"><i class="fas fa-chevron-right"></i></div>
+            <div class="sbox">
+                <h1>WELCOME TO ANYAR</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam laboriosam numquam eligendi nobis aut pariatur iste veniam porro voluptatum in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa velit aliquam cum, itaque sequi debitis facere eaque nostrum voluptatibus incidunt!</p>
+            </div>
+            <div class="rightbtn"><i class="fas fa-chevron-right"></i></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="cards">
+            <div><span style=><i class="fas fa-basketball-ball"></i></span>
+                <br><br>
+                <b>Lorem, ipsum</b><br><br>
+                <p>dolor sit amet consectetur adipisicing elit. Est ullam,</p>
+            </div>
+            <div><span style=""><i class="fas fa-file-alt"></i></span>
+                <br><br>
+                <b>Lorem, ipsum</b><br><br>
+                <p>dolor sit amet consectetur adipisicing elit. Est ullam,</p>
+            </div>
+            <div><span style=""><i class="far fa-clock"></i></span>
+                <br><br>
+                <b>Lorem, ipsum</b><br><br>
+                <p>dolor sit amet consectetur adipisicing elit. Est ullam,</p>
+            </div>
+            <div><span style=""><i class="fas fa-globe-africa"></i></span>
+                <br><br>
+                <b>Lorem, ipsum</b><br><br>
+                <p>dolor sit amet consectetur adipisicing elit. Est ullam,</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

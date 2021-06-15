@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>c</title>
+    <style>
+        .container {
+            width: 30vw;
+            margin: auto;
+            height: 600px;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(9,1fr);
+        }
+        .box1{
+            background: #2a99cf;
+            display: grid;
+            place-items: center;
+            color: #fff;
+            font-size: 25px;
+        }
+        .box2{
+            background: #f1f1f1;
+            display: grid;
+            grid-row: 2/10;
+            
+        }
+        .inner{
+            margin: auto;
+            height: 90%;
+            margin-top: 20px;
+            width: 90%;
+            box-sizing: border-box;
+            //background: red;
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+            grid-template-rows: repeat(6,1fr);
+            grid-gap: 20px;
+        }
+        .inner input[type=text]{
+            padding-left: 20px;
+            font-size: 20px;
+            border: 1px solid rgba(0, 0, 0, 0.315);
+        }
+        .inner input[type=submit]{
+            background: #2a99cf;
+            border: none;
+            color: #fff;
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+    
+        <form action="" class="container">
+            <div class="box1"><h3>Sign Up</h3></div>
+            <div class="box2">
+                <div class="inner">
+                    <input type="text" placeholder="Username">
+                    <input type="text" placeholder="Email Address">
+                    <input type="text" placeholder="Password">
+                    <input type="text" placeholder="First Name">
+                    <input type="text" placeholder="Last Name">
+                    <input type="submit">
+                </div>
+            </div>
+            
+        </form>
+        
+    
+</body>
+
+</html>

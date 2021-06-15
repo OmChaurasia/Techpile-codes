@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+        body{
+            overflow-x: hidden;
+        }
+        .navbar{
+           // background: red;
+            line-height: 60px;
+            height: 60px;
+            width: 100vw;
+            position: relative;
+        }
+        .navbar H3{
+            color: #3a6381;
+            position: absolute;
+            left: 100px;
+            
+        }
+        .navbar ul{
+            display: flex;
+            width: 50vw;
+            list-style: none;
+            position: absolute;
+            right: 0;
+           // background: red;
+        }
+        .navbar ul li{
+            margin: auto;
+        }
+        .navbar ul li a{
+            color: #2c536c;
+            text-decoration: none;
+            padding: 5px;
+        }
+        .navbar ul li a:hover{
+            background: #2c536c;
+            color: #FFF;
+        }
+        .navbar .line{
+            height: 34px;
+            width: 4px;
+            background: rgb(102, 101, 101);
+            position: absolute;
+            left: 210px;
+            top: 12px;
+        }
+        .jumbo{
+            height: 300px;
+            width: 100%;
+            background: url(https://images.pexels.com/photos/5783497/pexels-photo-5783497.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260);
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            color: #FFF;
+        }
+        .jumbo h1{
+            position: absolute;
+            top: 125px;
+            left: 100px;
+        }
+        .jumbo p{
+            position: absolute;
+            top: 175px;
+            left: 100px;
+        }
+        .services{
+            height: 200px;
+         //   background: red;
+        }
+        .services h3{
+            text-align: center;
+            padding: 20px;
+            font-size: 30px;
+        }
+        .services p{
+            width: 60vw;
+            text-align: center;
+            
+            margin: auto;
+            
+        }
+        .cards{
+            width: 70vw;
+            height: 250px;
+           // background: red;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,250px);
+            grid-gap: 20px;
+        }
+        .cards div{
+            background: rgba(0,0,0,0.3);
+            text-align: center;
+            
+        }
+        .cards div span{
+            font-size: 34px;
+            padding-top: 50px;
+            color: rgba(0,0,0,0.5);
+        }
+        .cards div button{
+            margin-top: 20px;
+            line-height: 34px;
+            font-size: 17px;
+            padding: 0 20px;
+            background: #134f7a;
+            color: #FFF;
+            border: none;
+        }
+        .container{
+            height: 400px;
+            width: 100vw;
+            background: #015997;
+            margin: 40px 0px;
+            display: grid;
+            place-items: center;
+            color: #FFF;
+        }
+        .container .outer{
+            width: 70vw;
+            height: 300px;
+         //   background: blue;
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            grid-template-rows: repeat(1,300px);
+            grid-gap: 50px;
+        }
+        .container .outer .first{
+            background: pink;   
+        }
+        .container .outer .second{
+          //  background: red;
+        }
+        .second h3{
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <H3>OVERTAKE</H3><div class="line"></div>
+        <div class="mainnav">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Pricing</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="jumbo">
+        <h1>STRATEGY AND DESIGN</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque, cupiditate.</p>
+    </div>
+    <div class="services">
+        <h3>Services</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae quidem rerum velit eligendi. Saepe, iure natus, autem quibusdam et obcaecati accusantium tenetur velit aliquid veritatis, quasi ratione quod molestias id. Culpa enim molestias corporis illo! Velit quidem deleniti officiis recusandae ducimus minus quisquam, repellendus sed natus praesentium, corporis ad eius.</p>
+    </div>
+    <div class="cards">
+        <div><br><br><span style=""><i class="fas fa-basketball-ball"></i></span>
+            <br><br>
+            <b>Lorem, ipsum</b><br><br>
+            dolor sit amet consectetur adipisicing elit. Est ullam,
+            <button>Learn More</button>
+        </div>
+        <div><br><br><span style=""><i class="fas fa-file-alt"></i></span>
+            <br><br>
+            <b>Lorem, ipsum</b><br><br>
+            dolor sit amet consectetur adipisicing elit. Est ullam,
+            <button>Learn More</button>
+        </div>
+        <div><br><br><span style=""><i class="far fa-clock"></i></span>
+            <br><br>
+            <b>Lorem, ipsum</b><br><br>
+            dolor sit amet consectetur adipisicing elit. Est ullam,
+            <button>Learn More</button>
+        </div>
+        <div><br><br><span style="padding-top: 50px;"><i class="fas fa-globe-africa"></i></span>
+            <br><br>
+            <b>Lorem, ipsum</b><br><br>
+            dolor sit amet consectetur adipisicing elit. Est ullam,
+            <button>Learn More</button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="outer">
+            <div class="first">
+                <img src="https://images.pexels.com/photos/5429125/pexels-photo-5429125.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="" style="height: 100%; width: 100%;">
+            </div>
+            <div class="second">
+                <h3>Our Team</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, omnis alias error esse ipsum recusandae a laboriosam incidunt cupiditate. Blanditiis sunt reprehenderit hic deleniti quibusdam, consequatur necessitatibus ducimus maiores voluptatum.</p><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, omnis alias error esse ipsum recusandae a laboriosam incidunt cupiditate. Blanditiis sunt reprehenderit hic deleniti quibusdam, consequatur necessitatibus ducimus maiores voluptatum.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

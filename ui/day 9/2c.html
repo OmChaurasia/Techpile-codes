@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2a</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+            background: url(https://images.pexels.com/photos/772429/pexels-photo-772429.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat;
+            background-size: cover;
+            display: grid;
+            place-items: center;
+            color: #fff;
+            font-weight: bold;
+           
+        }
+        .container{
+            z-index: 2;
+        }
+        h3{
+            font-size: 40px;
+            text-align: center;
+            text-shadow: 1px 1px 2px black;
+        }
+        p{
+            margin: auto;
+            text-align: center;
+        }
+        .this{
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(69, 2, 253, 0.4);
+            z-index: 1;
+        }
+        button{
+            position: relative;
+  padding: 0.5em 1em;
+  width: 100%;
+  font-size: 1.2em;
+  border: none;
+  background: none;
+  outline: none;
+  color: black;
+  mix-blend-mode: screen;
+        }
+        button::before{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: white;
+            border-radius: 0.3em;
+            content: '';
+            mix-blend-mode: color-burn;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="this"></div>
+    <div class="container">
+        <h3>Background image <br> gradient overlay</h3><br>
+        
+    <button>Quick CSS tutorial</button></div>
+
+</body>
+
+</html>

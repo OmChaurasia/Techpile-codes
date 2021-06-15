@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.5</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            position: relative;
+            top: 60px;
+            height: 100vh;
+            width: 80vw;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            grid-gap: 20px;
+        }
+
+        .container .inner img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            
+        }
+        #b1{
+            border: 5px solid blue;
+        }
+        #b2{
+            border: 5px dotted black;
+        }
+        #b3{
+            box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.568);
+        }
+        #b4{
+            box-shadow: 2px 3px 5px 5px rgba(0, 0, 0, 0.568);
+        }
+        #b5{
+            box-shadow: 0 0 5px 3px rgba(16, 9, 117, 0.568);
+        }
+        #b6{
+            border: 5px dashed rgb(199, 20, 20);
+            
+        }
+        #b8{
+            border: 5px double rgb(199, 20, 20);
+            
+        }
+        #b9{
+            border: 5px groove rgb(199, 20, 20);
+            
+        }
+        #b7{
+            border: 5px inset rgb(199, 20, 20);
+            box-shadow: 2px 3px 3px black;
+            
+        }
+        #b10{
+            border: 5px dashed rgb(100, 43, 43);
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="inner" id="b1">
+            <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg" alt="img">
+        </div>
+        <div class="inner" id="b2">
+            <img src="https://i.pinimg.com/736x/50/df/34/50df34b9e93f30269853b96b09c37e3b.jpg" alt="img">
+        </div>
+        <div class="inner" id="b3">
+            <img src="https://i.pinimg.com/originals/a7/3d/6e/a73d6e4ac85c6a822841e449b24c78e1.jpg" alt="img">
+        </div>
+        <div class="inner" id="b4">
+            <img src="https://wallpapercave.com/wp/wp2634222.jpg" alt="img">
+        </div>
+        <div class="inner" id="b5">
+            <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg" alt="img">
+        </div>
+        <div class="inner" id="b6">
+            <img src="https://i.pinimg.com/736x/50/df/34/50df34b9e93f30269853b96b09c37e3b.jpg" alt="img">
+        </div>
+        <div class="inner" id="b7">
+            <img src="https://i.pinimg.com/originals/a7/3d/6e/a73d6e4ac85c6a822841e449b24c78e1.jpg" alt="img">
+        </div>
+        <div class="inner" id="b8">
+            <img src="https://wallpapercave.com/wp/wp2634222.jpg" alt="img">
+        </div>
+        <div class="inner" id="b9">
+            <img src="https://cdn.pixabay.com/photo/2014/02/27/16/10/tree-276014__340.jpg" alt="img">
+        </div>
+        <div class="inner" id="b10">
+            <img src="https://i.pinimg.com/736x/50/df/34/50df34b9e93f30269853b96b09c37e3b.jpg" alt="img">
+        </div>
+        
+    </div>
+</body>
+
+</html>
