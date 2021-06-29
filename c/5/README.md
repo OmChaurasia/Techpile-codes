@@ -1,117 +1,115 @@
 
 # Question 1
 
-write a program to find sum and average of three given numbers.
+WAP to input three number and find greatest within all three.
 
 
 ## Output
 
 ```bash 
- The sum of 25, 75 and 50 is :150
- The average of 25, 75 and 50 is :50
+Enter the number
+89
+Enter the number
+56
+Enter the number
+74
+89 is greatest
 ```
 
 # Question 2
 
-write a program to find subtraction of two given number. 
-
-
+Write a C program that reads an integer between 1 and 12 and print the month of the year in English.
 ## Output
 
 ```bash 
-The subtraction of 75 and 25 is :50
+Enter the number between 1 to 12
+6
+June
 ```
 
 # Question 3
 
-write a program to find product of two given number.(Product means
-multiplication)
-
-
+WAP to input a number and check it is even or odd by using switch statement.
 ## Output
 
 ```bash 
-The product of 75 and 25 is :1875
+Enter the number
+45
+45 is odd
 ```
 
 # Question 4
 
- write a program to find square of a given number.
-
+WAP to input two number and input operation in (+,-,*,/,%) and perform operation on
+two values based on the inputted operation symbol by using else-if ladder and switch
+statement.
 ## Output
 
 ```bash 
-The square of 5 is :25
+Enter the numbers
+45
+3
+Enter the operation you want to perform
+/
+45 / 3 = 15
 ```
 
 # Question 5
 
-write a program to find cube of a given number.
-
+Write a C program to check whether a character is uppercase or lowercase alphabet.
 ## Output
 
 ```bash 
-The cube of 5 is :125
+Enter a character
+t
+lowercase
 ```
 
 # Question 6
 
-write a program to find simple interest by accepting principal, time and rate values.
-
+Write a C program to input basic salary of an employee and calculate its Gross salary
+according to following:
+Basic Salary <= 10000 : HRA = 20%, DA = 80% ,
+Basic Salary <= 20000 : HRA = 25%, DA = 90% ,
+Basic Salary > 20000 : HRA = 30%, DA = 95% 
 
 ## Output
 
 ```bash 
-The interest of 1000 principal on 5 rate for 2 years is : 100
+Enter your basic salary
+15000
+Total salary is 32250.00
 ```
 
 # Question 7
 
-write a program to convert centigrade temperature into Fahrenheit temperature.
-(hint =c*1.8+32 )
+Write a program to input any integer amount and count total number of notes.
+Ex : Amount = 3435
+Number of 2000 notes is : 1
+Number of 500 notes is : 2
+Number of 200 notes is : 2
+Number of 100 notes is : 0
+Number of 50 notes is : 0
+Number of 20 notes is : 1
+Number of 10 notes is : 1
+Number of 5 notes is : 1
+Number of 2 notes is : 0
+Number of 1 notes is : 0
 
 ## Output
 
 ```bash 
-37.0 centigrade is equal to : 98.60 fahrenheit
+Enter the amount
+4586
+Number of 2000 notes is : 2
+Number of 500 notes is : 1
+Number of 200 notes is : 0
+Number of 100 notes is : 0
+Number of 50 notes is : 1
+Number of 20 notes is : 1
+Number of 10 notes is : 1
+Number of 5 notes is : 1
+Number of 2 notes is : 0
+Number of 1 notes is : 1
 ```
 
-# Question 8
-
-Write a program to enter a value in inch and find centimeters in total inches.
-
-
-## Output
-
-```bash 
-Enter the value in inch
-1
-1.0 inches equal to 2.5 centimeters
-```
-
-# Question 9
-
-Write a program to input your total marks in 10th class and print percentage .
-
-
-## Output
-
-```bash 
-Enter the total obtained marks you got in 10th class
-484
-Your percentage is 80.00 in 10th class
-```
-
-# Question 10
-
-Write a program in C to input total monthly income of your father and print
-annual income .
-Annual income = (Monthly income * 12) + 10% rewards of total annual income
-
-## Output
-
-```bash 
-Enter monthly income of your father
-10000
-Your father's yearly income with reward is 132000
-```

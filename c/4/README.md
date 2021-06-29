@@ -1,117 +1,149 @@
 
 # Question 1
 
-write a program to find sum and average of three given numbers.
-
+what is the output of the following code.
 
 ## Output
 
 ```bash 
- The sum of 25, 75 and 50 is :150
- The average of 25, 75 and 50 is :50
+ Enter 3 numbers5 6 7
+Largest No is 7
 ```
 
 # Question 2
 
-write a program to find subtraction of two given number. 
+what is the output of the following code.
 
 
 ## Output
 
 ```bash 
-The subtraction of 75 and 25 is :50
+enter a number to check even or odd8
+the number is even
 ```
 
 # Question 3
 
-write a program to find product of two given number.(Product means
-multiplication)
+what is the output of the following code.
 
 
 ## Output
 
 ```bash 
-The product of 75 and 25 is :1875
+enter your marks40
+Your result is pass
 ```
 
 # Question 4
 
- write a program to find square of a given number.
+Write a program to check whether a given number is divisible by 7 or not.
+Hint : i/p : 70
+o/p : Yes ! number is divisible by 7
 
 ## Output
 
 ```bash 
-The square of 5 is :25
+enter the number
+48
+No ! number is not divisible by 7
 ```
 
 # Question 5
 
-write a program to find cube of a given number.
+WAP tp check a given number is a positive number or negative number.
 
 ## Output
 
 ```bash 
-The cube of 5 is :125
+enter the number
+4
+the number is positive
 ```
 
 # Question 6
 
-write a program to find simple interest by accepting principal, time and rate values.
-
+ WAP to check a given year is a leap year or not.
 
 ## Output
 
 ```bash 
-The interest of 1000 principal on 5 rate for 2 years is : 100
+enter the year
+2020
+2020 is leap year
 ```
 
 # Question 7
 
-write a program to convert centigrade temperature into Fahrenheit temperature.
-(hint =c*1.8+32 )
-
+Write a program to check whether a entered number is less than 10 or not
 ## Output
 
 ```bash 
-37.0 centigrade is equal to : 98.60 fahrenheit
+enter the number
+5
+5 is less than 10
 ```
 
 # Question 8
 
-Write a program to enter a value in inch and find centimeters in total inches.
+Write a program to calculate net amount to pay. if quantity of product is greater than 1000
+then 10% discount on total amount.
 
 
 ## Output
 
 ```bash 
-Enter the value in inch
-1
-1.0 inches equal to 2.5 centimeters
+enter the quantity200
+enter the rate100
+the total is : 20000
 ```
 
 # Question 9
 
-Write a program to input your total marks in 10th class and print percentage .
-
+Write a C program to accept a coordinate points in a XY coordinate system and determine
+in which quadrant the coordinate point lies.
 
 ## Output
 
 ```bash 
-Enter the total obtained marks you got in 10th class
-484
-Your percentage is 80.00 in 10th class
+enter the value of x
+1
+enter the value of y
+2
+First coordinates
 ```
 
 # Question 10
 
-Write a program in C to input total monthly income of your father and print
-annual income .
-Annual income = (Monthly income * 12) + 10% rewards of total annual income
-
+Write a C program to read roll no, and marks of three subject and calculate the total
+,percentage and division.
 ## Output
 
 ```bash 
-Enter monthly income of your father
-10000
-Your father's yearly income with reward is 132000
+Enter your rollno
+12
+Enter marks of subject 1
+75
+Enter marks of subject 2
+48
+Enter marks of subject 3
+68
+your percentage is 63
+your division is second
+```
+
+# Question 11
+ Write a program in C to calculate in print the electricity bill of a given customer . the
+Unit consume by the user should be taken from the keyboard and display the total amount
+to pay the customer. The charge are as follows:
+ UNIT Charge/Unit
+Up to 199 @1.20
+200 and above but less than 400 @1.50
+400 and above but less than 600 @1.80
+600 and above @2.00
+## Output
+
+```bash 
+Enter the unit
+250
+Your bill amount is 375.000000
 ```

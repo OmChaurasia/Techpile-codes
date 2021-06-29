@@ -1,117 +1,124 @@
 
 # Question 1
 
-write a program to find sum and average of three given numbers.
-
+Write a program to input a 3*3 matrix and print last column values
 
 ## Output
 
 ```bash 
- The sum of 25, 75 and 50 is :150
- The average of 25, 75 and 50 is :50
+
+Read a 2D array of size 3x3 and print the matrix :
+------------------------------------------------------
+Input elements in the matrix :
+element - [0],[0] : 4
+element - [0],[1] : 5
+element - [0],[2] : 6
+element - [1],[0] : 7
+element - [1],[1] : 2
+element - [1],[2] : 3
+element - [2],[0] : 7
+element - [2],[1] : 5
+element - [2],[2] : 6
+
+The Last column of matrix is :
+
+6
+3
+6
 ```
 
 # Question 2
 
-write a program to find subtraction of two given number. 
-
+Write a program to input two 3*3 matrix and print addition matrix of both.
 
 ## Output
 
 ```bash 
-The subtraction of 75 and 25 is :50
+Enter elements of 1st matrix:
+element - [0],[0] : 2
+element - [0],[1] : 3
+element - [0],[2] : 4
+element - [1],[0] : 5
+element - [1],[1] : 6
+element - [1],[2] : 7
+element - [2],[0] : 8
+element - [2],[1] : 4
+element - [2],[2] : 5
+Enter elements of 2nd matrix:
+element - [0],[0] : 7
+element - [0],[1] : 5
+element - [0],[2] : 6
+element - [1],[0] : 1
+element - [1],[1] : 2
+element - [1],[2] : 4
+element - [2],[0] : 5
+element - [2],[1] : 3
+element - [2],[2] : 4
+
+Sum of two matrices:
+9   8   10
+
+6   8   11
+
+13   7   9
 ```
 
 # Question 3
 
-write a program to find product of two given number.(Product means
-multiplication)
-
+Write a program to check a given matrix is identity or not .
 
 ## Output
 
 ```bash 
-The product of 75 and 25 is :1875
+Enter the order of the matrix (mxn):
+where m = number of rows; and
+      n = number of columns
+3
+3
+Enter the elements of the matrix
+1
+2
+3
+4
+5
+6
+7
+8
+9
+It is NOT an identity matrix
 ```
 
 # Question 4
 
- write a program to find square of a given number.
-
+Write a program to input your name and check number of words in your name 
 ## Output
 
 ```bash 
-The square of 5 is :25
+Enter your name
+Om Chaurasia
+Ther are 2 words in name
 ```
 
 # Question 5
 
-write a program to find cube of a given number.
-
+Write a program to input your name and print sort form of your name .
 ## Output
 
 ```bash 
-The cube of 5 is :125
+Enter your name
+Om Chaurasia
+ aaachimorsu
 ```
 
 # Question 6
 
-write a program to find simple interest by accepting principal, time and rate values.
-
-
-## Output
-
-```bash 
-The interest of 1000 principal on 5 rate for 2 years is : 100
-```
-
-# Question 7
-
-write a program to convert centigrade temperature into Fahrenheit temperature.
-(hint =c*1.8+32 )
+Write a program to input your name and print how many times a present in your name .
 
 ## Output
 
 ```bash 
-37.0 centigrade is equal to : 98.60 fahrenheit
+Enter your name
+Om Chaurasia
+a is present 3 times
 ```
 
-# Question 8
-
-Write a program to enter a value in inch and find centimeters in total inches.
-
-
-## Output
-
-```bash 
-Enter the value in inch
-1
-1.0 inches equal to 2.5 centimeters
-```
-
-# Question 9
-
-Write a program to input your total marks in 10th class and print percentage .
-
-
-## Output
-
-```bash 
-Enter the total obtained marks you got in 10th class
-484
-Your percentage is 80.00 in 10th class
-```
-
-# Question 10
-
-Write a program in C to input total monthly income of your father and print
-annual income .
-Annual income = (Monthly income * 12) + 10% rewards of total annual income
-
-## Output
-
-```bash 
-Enter monthly income of your father
-10000
-Your father's yearly income with reward is 132000
-```

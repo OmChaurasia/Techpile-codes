@@ -1,117 +1,135 @@
 
 # Question 1
 
-write a program to find sum and average of three given numbers.
-
-
+write a program to print following output
 ## Output
 
 ```bash 
- The sum of 25, 75 and 50 is :150
- The average of 25, 75 and 50 is :50
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
 ```
 
-# Question 2
+# Question 2 a
 
-write a program to find subtraction of two given number. 
-
+write a program to print following output
 
 ## Output
 
 ```bash 
-The subtraction of 75 and 25 is :50
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5
+```
+
+
+# Question 2 b
+
+write a program to print following output
+
+## Output
+
+```bash 
+2 2 
+3 3 3 
+4 4 4 4 
+5 5 5 5 5
+```
+
+# Question 2 c
+
+write a program to print following output
+
+## Output
+
+```bash 
+1 
+2 2 
+3 3 3 
+4 4 4 4 
 ```
 
 # Question 3
 
-write a program to find product of two given number.(Product means
-multiplication)
-
+write a program to print following output
 
 ## Output
 
 ```bash 
-The product of 75 and 25 is :1875
+1 
+2 4
+3 6 9
+4 8 12 16
+5 10 15 20 25
 ```
 
 # Question 4
-
- write a program to find square of a given number.
-
+write a program to print following output
 ## Output
 
 ```bash 
-The square of 5 is :25
+a
+b b
+c c c
+d d d d
+e e e e e
 ```
 
 # Question 5
 
-write a program to find cube of a given number.
-
+write a program to print following output
 ## Output
 
 ```bash 
-The cube of 5 is :125
+a b c d e
+a b c d
+a b c
+a b
+a
 ```
 
 # Question 6
 
-write a program to find simple interest by accepting principal, time and rate values.
-
+write a program to print following output
 
 ## Output
 
 ```bash 
-The interest of 1000 principal on 5 rate for 2 years is : 100
+    1
+   2 2
+  3 3 3
+ 4 4 4 4
+5 5 5 5 5
 ```
 
 # Question 7
 
-write a program to convert centigrade temperature into Fahrenheit temperature.
-(hint =c*1.8+32 )
-
+write a program to print following output
 ## Output
 
 ```bash 
-37.0 centigrade is equal to : 98.60 fahrenheit
+* * * * *
+ * * * *
+  * * *
+   * *
+    *
 ```
 
 # Question 8
 
-Write a program to enter a value in inch and find centimeters in total inches.
-
-
-## Output
-
-```bash 
-Enter the value in inch
-1
-1.0 inches equal to 2.5 centimeters
-```
-
-# Question 9
-
-Write a program to input your total marks in 10th class and print percentage .
-
+write a program to print following output
 
 ## Output
 
 ```bash 
-Enter the total obtained marks you got in 10th class
-484
-Your percentage is 80.00 in 10th class
+1  2  3  4  5  6  7  8  9  10
+2  4  6  8  10  12  14  16  18  20
+3  6  9  12  15  18  21  24  27  30
+4  8  12  16  20  24  28  32  36  40
+5  10  15  20  25  30  35  40  45  50
 ```
 
-# Question 10
-
-Write a program in C to input total monthly income of your father and print
-annual income .
-Annual income = (Monthly income * 12) + 10% rewards of total annual income
-
-## Output
-
-```bash 
-Enter monthly income of your father
-10000
-Your father's yearly income with reward is 132000
-```

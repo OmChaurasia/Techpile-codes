@@ -1,117 +1,138 @@
 
 # Question 1
 
-write a program to find sum and average of three given numbers.
-
+Write a C program that prints all even numbers between 1 and 50 .
 
 ## Output
 
 ```bash 
- The sum of 25, 75 and 50 is :150
- The average of 25, 75 and 50 is :50
+All the even numbers between 1 and 50 are :
+2 4 6 8 10 12 14 16 18 20 22 24 26 28 30 32 34 36 38 40 42 44 46 48 50 
 ```
 
 # Question 2
 
-write a program to find subtraction of two given number. 
-
+Write a program to input a number and print numbers from inputted number to 50.
 
 ## Output
 
 ```bash 
-The subtraction of 75 and 25 is :50
+Enter the number
+23
+23 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 42 43 44 45 46 47 48 49 50
 ```
 
 # Question 3
 
-write a program to find product of two given number.(Product means
-multiplication)
-
+WAP to input a number and print table of that number  
 
 ## Output
 
 ```bash 
-The product of 75 and 25 is :1875
+Enter the number
+23
+23 x 1 = 23
+23 x 2 = 46
+23 x 3 = 69
+23 x 4 = 92
+23 x 5 = 115
+23 x 6 = 138
+23 x 7 = 161
+23 x 8 = 184
+23 x 9 = 207
+23 x 10 = 230
 ```
 
 # Question 4
 
- write a program to find square of a given number.
+Write a C program that read 5 numbers and counts the number of positive numbers and negative numbers
 
 ## Output
 
 ```bash 
-The square of 5 is :25
+Enter the number
+3
+3 is positive number
+Enter the number
+-8
+-8 is negative number
+Enter the number
+-6
+-6 is negative number
+Enter the number
+5
+5 is positive number
+Enter the number
+7
+7 is positive number
 ```
 
 # Question 5
 
-write a program to find cube of a given number.
-
+Write a C program that read 5 n and counts the number of positive n and print the average of all positive values.
 ## Output
 
 ```bash 
-The cube of 5 is :125
+Input the first number:5
+
+Input the second number:7
+
+Input the third number:6
+
+Input the fourth number:-2
+
+Input the fifth number:5
+
+ The number of positive n:4
+
+ The average of all positive value is 5.00
 ```
 
 # Question 6
 
-write a program to find simple interest by accepting principal, time and rate values.
-
+Write a C program to find and print the square of each one of the even values from 1 to a
+specified value
 
 ## Output
 
 ```bash 
-The interest of 1000 principal on 5 rate for 2 years is : 100
+Enter the number
+5
+Square of 1 is 1
+Square of 2 is 4
+Square of 3 is 9
+Square of 4 is 16
+Square of 5 is 25
 ```
 
 # Question 7
 
-write a program to convert centigrade temperature into Fahrenheit temperature.
-(hint =c*1.8+32 )
-
+Write a C program to print all numbers between 1 to 100 which divided by 5 and the
+ remainder will be 3
 ## Output
 
 ```bash 
-37.0 centigrade is equal to : 98.60 fahrenheit
+5 10 20 25 35 40 50 55 65 70 80 85 95 100
 ```
 
 # Question 8
 
-Write a program to enter a value in inch and find centimeters in total inches.
-
-
-## Output
-
-```bash 
-Enter the value in inch
-1
-1.0 inches equal to 2.5 centimeters
-```
-
-# Question 9
-
-Write a program to input your total marks in 10th class and print percentage .
-
+Write a program to ask the user to input numbers for 5 times and print square of that
+ number.
 
 ## Output
 
 ```bash 
-Enter the total obtained marks you got in 10th class
-484
-Your percentage is 80.00 in 10th class
+Enter the numbers
+4
+5
+6
+7
+4
+Square of 4 is 16
+Square of 5 is 25
+Square of 6 is 36
+Square of 7 is 49
+Square of 4 is 16
 ```
 
-# Question 10
-
-Write a program in C to input total monthly income of your father and print
-annual income .
-Annual income = (Monthly income * 12) + 10% rewards of total annual income
-
-## Output
-
-```bash 
-Enter monthly income of your father
-10000
-Your father's yearly income with reward is 132000
-```
