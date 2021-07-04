@@ -43,5 +43,6 @@ Tags for font styling
 - strike tag `<strike></strike>`
 
 **Question 3 :**
-a Tags for redirect to another page
+a Tags for redirect to another page and favicon
 - a tag `<a href="#"></a>`
+- favicon ` <link rel="icon" href="">`
