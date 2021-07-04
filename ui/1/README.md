@@ -10,31 +10,38 @@
 
 
   
-## Features
+## Description
+**Question 1:**
+Tags for font styling
+- U tag `<u></u>`
+- I tag `<i></i>`
+- S tag `<s></s>`
+- STRONG tag `<strong></strong>`
+- ABBR tag `<abbr></abbr>`
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+**Question 2 a:**
+Tags for Subscript and Superscript
+- sub tag `<sub></sub>`
+- sup tag `<sup></sup>`
 
-  
-## Screenshots
+**Question 2 b:**
+Tags for font styling
+- span tag `<span></span>`
+- small tag `<small></small>`
+- S tag `<s></s>`
+- sub tag `<sub></sub>`
+- sup tag `<sup></sup>`
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+**Question 2 c:**
+Tags for font styling
+- big tag `<big></big>`
+- small tag `<small></small>`
+- S tag `<s></s>`
+- sub tag `<sub></sub>`
+- sup tag `<sup></sup>`
+- tt tag `<tt></tt>`
+- strike tag `<strike></strike>`
 
-
-## Used By
-
-This project is used by the following companies:
-
-- Company 1
-- Company 2
-
-  
-## Tech Stack
-
-**Client:** React, Redux, TailwindCSS
-
-**Server:** Node, Express
-
-  
+**Question 3 :**
+a Tags for redirect to another page
+- a tag `<a href="#"></a>`
