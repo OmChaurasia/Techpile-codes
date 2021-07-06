@@ -31,9 +31,12 @@ Some Advance UI design I created preview are listed below:
  - [A Background image rgba color design (ui/8/2d)](https://omchaurasia.github.io/Techpile-codes/ui/8/2d.html)
  - [A Grid layout design (ui/8/1c)](https://omchaurasia.github.io/Techpile-codes/ui/8/1c.html)
  - [Different button design (ui/8/1)](https://omchaurasia.github.io/Techpile-codes/ui/8/1.html)
+ - [A chess board design (ui/7/e)](https://omchaurasia.github.io/Techpile-codes/ui/7/e.html)
+ - [A Registration form design (ui/6/q3)](https://omchaurasia.github.io/Techpile-codes/ui/6/q3.html)
+ - [Different types of border on Image design (ui/6/q1)](https://omchaurasia.github.io/Techpile-codes/ui/6/q1.html)
 
 
-  
+  For more designs click on the ui folder.
 
 
 # C Programming Questions
