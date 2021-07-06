@@ -11,7 +11,7 @@ Some Advance UI design I created preview are listed below:
  - [A webpage design (ui/14/a)](https://omchaurasia.github.io/Techpile-codes/ui/14/a.html)
  - [A webpage design (ui/14/b)](https://omchaurasia.github.io/Techpile-codes/ui/14/b.html)
  - [A webpage design (ui/13/first)](https://omchaurasia.github.io/Techpile-codes/ui/13/first.html)
- - [A webpage design (ui/13/second)](https://github.com/OmChaurasia/Techpile-codes/blob/master/ui/13/second.html)
+ - [A webpage design (ui/13/second)](https://omchaurasia.github.io/Techpile-codes/ui/13/second.html)
  - [A webpage design (ui/12/a)](https://omchaurasia.github.io/Techpile-codes/ui/12/a.html)
  - [A webpage design (ui/12/b)](https://omchaurasia.github.io/Techpile-codes/ui/12/b.html)
  - [A Login Signup form design (ui/11/1a)](https://omchaurasia.github.io/Techpile-codes/ui/11/1a.html)
